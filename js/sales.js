@@ -2,6 +2,7 @@
 
 var hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 var table = document.getElementById('locationtable');
+var form = document.getElementById('add-location');
 
 function CookieStand(locationName, minCustomersPerHour, maxCustomersPerHour, avgCookiesPerSale) {
   this.locationName = locationName;
@@ -141,3 +142,5 @@ function renderTable() {
 }
 
 renderTable();
+
+form.addEventListener('submit', handleForm);
