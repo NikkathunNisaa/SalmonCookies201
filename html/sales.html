@@ -9,6 +9,26 @@
   <body>
     <h1>Salmon Cookies: Sales Data</h1>
 
+    <form id="add-location">
+      <fieldset>
+        <legend>Add a new store to the table!!!</legend>
+
+        <label for="locName">Location Name</label>
+        <input name="locName" type="text"></input>
+
+        <label for="min">Minimum Customers Per Hour</label>
+        <input name="min" type="number"></input>
+
+        <label for="max">Maximum Customers Per Hour</label>
+        <input name="max" type="number"></input>
+
+        <label for="avg">Average Cookies Per Sale</label>
+        <input name="avg" type="text"></input>
+
+        <button type="submit">Click here to add!</button>
+      </fieldset>
+    </form>
+
     <table id="locationtable"></table>
 
     <script src="../js/sales.js"></script>
